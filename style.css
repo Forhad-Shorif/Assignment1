@@ -176,7 +176,7 @@ ul li a {
 .ten button{
     border: 2px solid rgb(26, 255, 0);
     height: 30px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     color: blue;
     background-color: #c4fd0a;
@@ -185,13 +185,13 @@ ul li a {
     
 }
 div .ten .ten-two{
-    border: 3px solid blue;
-    background-color: #1bd13f;
-    color: rgb(247, 4, 4);
-    text-align: center;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: left;
     padding: 4px;
     border-width: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     
     
 }

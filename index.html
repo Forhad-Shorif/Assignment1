@@ -3,227 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>DevConf 2026 - Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- Header & Navigation -->
     <header>
-         <nav>
-          
-           <h2> <img src="assets/logo.png" alt=""></h2>
-            <ul>
-                
-                <li><a href="">Speakers</a></li>
-                <li><a href="">Schedule</a></li>
-                <li><a href="">Tracks</a></li>
-                <li><a href="">Venue</a></li>
-                <li><a href="">Blog</a></li>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="DevConf Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>    
-               
-                <button class="botton-one">Register Now</button>
-                
-            
-          
+            <button class="btn btn-primary nav-btn">Register Now</button>
         </nav>
-        
-      
     </header>
-    
-    <section class="two-three">
-     <div class="hero-container">
-       <div class="hero-content">
-          <h1>Code.Connect.Create</h1>
-         <p>Join 4000+ engineers,founders and builders
-             at the premier developer conference of 2026.
-             Three days of cutting-edge talks, hands-on
-              workshops and meaningful connections.</p>
-              <button class="hero-btn">Register Now</button>
-       </div>
-     </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Code. Connect. Create</h1>
+                <p>Join 4000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
+                <button class="btn btn-hero">Register Now</button>
+            </div>
+        </div>
     </section>
-    
-   <section class="dinner-1">
-    
-    <h2 class="dinner-2">Meet the Speakers</h2>
 
-    <div class="dinner-3">
-        
-        
-        <div>
-            
-            <div class="image-box">
-                <img src="assets/andrej.png" alt="">
+    <!-- Speakers Section -->
+    <section class="speakers-section" id="speakers">
+        <div class="section-container">
+            <h2 class="section-title">Meet the Speakers</h2>
+
+            <div class="speakers-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <div class="image-box">
+                        <img src="assets/andrej.png" alt="Andrej Karpathy">
+                    </div>
+                    <div class="speaker-info">
+                        <span class="badge">AI / ML</span>
+                        <h3>Andrej Karpathy</h3>
+                        <p>Pretraining Team, Anthropic</p>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <div class="image-box">
+                        <img src="assets/demis.png" alt="Demis Hassabis">
+                    </div>
+                    <div class="speaker-info">
+                        <span class="badge">LLM & DeepMind</span>
+                        <h3>Demis Hassabis</h3>
+                        <p>Co-Founder and CEO, Google DeepMind</p>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <div class="image-box">
+                        <img src="assets/gary.png" alt="Gary Marcus">
+                    </div>
+                    <div class="speaker-info">
+                        <span class="badge">Frontend</span>
+                        <h3>Gary Marcus</h3>
+                        <p>Staff Engineer, Vercel</p>
+                    </div>
+                </div>
+
+                <!-- Speaker 4 -->
+                <div class="speaker-card">
+                    <div class="image-box">
+                        <img src="assets/mustafa.png" alt="Mustafa Suleyman">
+                    </div>
+                    <div class="speaker-info">
+                        <span class="badge">Security</span>
+                        <h3>Mustafa Suleyman</h3>
+                        <p>CEO of Microsoft AI</p>
+                    </div>
+                </div>
             </div>
-        
-            <div class="dinner-4">
-                <span>AI / ML</span>
-                <h3>Andrej Karpathy</h3>
-                <p>Pretraining Team, Anthropic</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-container text-center">
+            <h2 class="section-title">Secure Your Spot</h2>
+            <p class="section-subtitle">Early-bird pricing ends August 15, 2026.</p>
+
+            <div class="pricing-grid">
+                <!-- Plan 1: Standard -->
+                <div class="pricing-card">
+                    <h3>STANDARD</h3>
+                    <div class="price">$399 <span>/ per person</span></div>
+                    <hr>
+                    <ul>
+                        <li>Access to all 3 conference days</li>
+                        <li>48 curated technical talks</li>
+                        <li>2 workshop sessions</li>
+                        <li>Networking lunch & coffee breaks</li>
+                        <li>Conference swag bag</li>
+                        <li>Digital recordings (30 days)</li>
+                    </ul>
+                    <button class="btn btn-card">Get Standard</button>
+                </div>
+
+                <!-- Plan 2: Pro (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <h3>PRO</h3>
+                    <div class="price">$749 <span>/ per person</span></div>
+                    <hr>
+                    <ul>
+                        <li>Everything in Standard</li>
+                        <li>Unlimited workshop access</li>
+                        <li>Speaker meet & greet</li>
+                        <li>VIP networking dinner</li>
+                        <li>Lifetime recording access</li>
+                        <li>1-on-1 mentorship (30 min)</li>
+                    </ul>
+                    <button class="btn btn-card btn-featured">Get Pro</button>
+                </div>
+
+                <!-- Plan 3: Team -->
+                <div class="pricing-card">
+                    <h3>TEAM</h3>
+                    <div class="price">$5999 <span>/ up to 10 people</span></div>
+                    <hr>
+                    <ul>
+                        <li>Everything in Pro (10 seats)</li>
+                        <li>Dedicated team lounge access</li>
+                        <li>Private workshop booking</li>
+                        <li>Company logo on event page</li>
+                        <li>Recruitment booth (1 day)</li>
+                        <li>Priority customer support</li>
+                    </ul>
+                    <button class="btn btn-card">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Everything you need to know about DevConf 2026</p>
+
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <div class="faq-icon">❓</div>
+                    <h3>Who can join DevConf 2026?</h3>
+                    <p>Anyone passionate about software engineering, AI, web development, and tech innovation—students, developers, and industry leaders alike!</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">🎓</div>
+                    <h3>Will I get a certificate for attending?</h3>
+                    <p>Yes! All registered participants will receive an official verifiable digital Certificate of Participation after the event.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">💻</div>
+                    <h3>Are there hands-on workshops included?</h3>
+                    <p>Absolutely! We have dedicated interactive coding sessions, live build-alongs, and direct Q&A led by industry experts.</p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">🎥</div>
+                    <h3>How can I access recorded sessions?</h3>
+                    <p>All registered attendees will get lifetime access to the recorded videos, slides, and workshop resources via email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>DEVCONF 2026</h2>
+                <p>Premier Developer Conference</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="icon/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="icon/Linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="icon/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="icon/Instagram.png" alt="Instagram"></a>
+                </div>
             </div>
         </div>
 
-    
-        <div>
-            <div class="image-box">
-                <img src="assets/demis.png" alt="">
-            </div>
-            <div class="dinner-4">
-                <span>LLM & Deep Mind</span>
-                <h3>Demis Hassabis</h3>
-                <p>Co-Founder and CEO, Google DeepMind</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Programming Hero's Forhad Shorif. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    
-        <div>
-            <div class="image-box">
-                <img src="assets/gary.png" alt="">
-            </div>
-            <div class="dinner-4">
-                <span>Frontend</span>
-                <h3>Gary Marcus</h3>
-                <p>Staff Engineer, Vercel</p>
-            </div>
-        </div>
-
-        
-        <div>
-            <div class="image-box">
-                <img src="assets/mustafa.png" alt="">
-            </div>
-            <div class="dinner-4">
-                <span>Security</span>
-                <h3>Mustafa Suleyman</h3>
-                <p>CEO of Microsoft AI</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-    
-   <section class="six container">
-       <h2>Secure Your Spot</h2>
-       <p>Early-bird pricing ends August 15, 2026.</p>
-      
-     <div class="seven-container">
-        <div class="ten">
-          
-            <h3>STANDARD</h3>
-            <h1>$399</h1>
-             <p>per person</p>
-             <hr><br>
-             <ul>
-                <li>Access to all 3 conference days</li><br>
-                <li>48 curated technical talks</li>
-                <li>2 workshop sessions</li>
-                <li>Networking lunch & coffee breaks</li>
-                <li>Conference swag bag</li>
-                <li>Digital recordings(30 days)</li>
-             </ul><br>
-            <button>Get Standard</button>
-        </div>
-       
-        <div class="ten">
-            <div class="ten-two">
-           <h3>PRO</h3>
-           <h1>$749</h1>
-           <p>per person</p><hr><br>
-           <ul>
-            <li>Everything in Standard</li>
-            <li>Unlimited workshop access</li>
-            <li>Speaker meet & greet</li>
-            <li>VIP networking dinner</li>
-            <li>Lifetime recording access</li>
-            <li>1-on-1 mentorship (30 min)</li>
-           </ul><br>
-           <button class="dada">Get Pro</button>
-            </div>
-        </div>
-        <div class="ten">
-         <h3>TEAM</h3>
-         <h1>$5999</h1>
-         <p>up to 10 people</p><hr><br>
-         <ul>
-            <li>Everything in Pro (10seats)</li>
-            <li>Deadicated team lounge access</li>
-            <li>Private workshop booding</li>
-            <li>Company logo on event page</li>
-            <li>Recruitment booth (1 day)</li>
-            <li>Prioity customer support</li>
-        </ul><br>  
-         <button>Contact Us</button>
-         
-        </div>
-    </div>
-</section>
-<!-- DevConf 2026 - AI Challenge: FAQ Section -->
-<section class="faq-section" id="faq">
-    <div class="faq-container">
-        <h2 class="faq-title">Frequently Asked Questions</h2>
-        <p class="faq-subtitle">Everything you need to know about DevConf 2026</p>
-        
-        <div class="faq-grid">
-            <div class="faq-card">
-                <div class="faq-icon">❓</div>
-                <h3>Who can join DevConf 2026?</h3>
-                <p>Anyone passionate about software engineering, AI, web development, and tech innovation—students, developers, and industry leaders alike!</p>
-            </div>
-
-            <div class="faq-card">
-                <div class="faq-icon">🎓</div>
-                <h3>Will I get a certificate for attending?</h3>
-                <p>Yes! All registered participants will receive an official verifiable digital Certificate of Participation after the event.</p>
-            </div>
-
-            <div class="faq-card">
-                <div class="faq-icon">💻</div>
-                <h3>Are there hands-on workshops included?</h3>
-                <p>Absolutely! We have dedicated interactive coding sessions, live build-alongs, and direct Q&A led by industry experts.</p>
-            </div>
-
-            <div class="faq-card">
-                <div class="faq-icon">🎥</div>
-                <h3>How can I access recorded sessions?</h3>
-                <p>All registered attendees will get lifetime access to the recorded videos, slides, and workshop resources via email.</p>
-            </div>
-        </div>
-    </div>
-</section>
- <footer class="main-footer">
-    <div class="footer-container">
-        
-        <div class="footer-brand">
-            <h2>DEVCONF 2026</h2>
-            <p>My first making Portfolio</p>
-        </div>
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="">Speakers</a></li>
-                <li><a href="">Schedule</a></li>
-                <li><a href="">Tracks</a></li>
-                <li><a href="">Venue</a></li>
-            </ul>
-        </div>
-
-    
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href=""><img src="icon/facebook.png"></a>
-                <a href=""><img src="icon/Linkedin.png"></a>
-                <a href=""><img src="icon/twitter.png" height="80px"></a>
-                <a href=""><img src="icon/Instagram.png"></a>
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="footer-bottom-N">
-        <p> 2026 Programing Hero's Forhad Shorif</p>
-    </div>
-</footer>
 </body>
 </html>
